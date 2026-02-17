@@ -1,0 +1,142 @@
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 80px);
+  padding: 40px 20px;
+  background-color: #f5f7fa;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1110px;
+}
+
+.home-text-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+.home-heading {
+  color: #263868;
+  font-family: 'Roboto';
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 64px;
+  margin-bottom: 24px;
+}
+
+.instructions-list {
+  padding-left: 24px;
+  margin-bottom: 32px;
+}
+
+.instruction-item {
+  margin-bottom: 16px;
+}
+
+.instruction-text {
+  color: #475569;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
+}
+
+.instruction-label {
+  color: #263868;
+  font-weight: 600;
+}
+
+.start-assessment-button {
+  font-family: 'Roboto';
+  font-weight: 600;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #263868;
+  width: 200px;
+  height: 48px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.start-assessment-button:hover {
+  background-color: #1e2d54;
+}
+
+.home-desktop-img {
+  width: 45%;
+  max-width: 500px;
+}
+
+@media screen and (max-width: 992px) {
+  .home-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-text-container {
+    max-width: 100%;
+    align-items: center;
+  }
+
+  .home-heading {
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .instructions-list {
+    text-align: left;
+  }
+
+  .home-desktop-img {
+    width: 60%;
+    margin-top: 32px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home-heading {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .instruction-text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .start-assessment-button {
+    width: 180px;
+    height: 44px;
+    font-size: 14px;
+  }
+
+  .home-desktop-img {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .home-heading {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .instruction-text {
+    font-size: 13px;
+  }
+
+  .home-desktop-img {
+    width: 85%;
+  }
+}

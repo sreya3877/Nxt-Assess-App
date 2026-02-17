@@ -1,0 +1,174 @@
+.results-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 80px);
+  background-color: #f5f7fa;
+  padding: 40px 20px;
+}
+
+.results-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 48px 64px;
+  box-shadow: 0px 8px 40px rgba(7, 7, 7, 0.08);
+  max-width: 600px;
+  width: 100%;
+}
+
+.result-image {
+  width: 280px;
+  margin-bottom: 32px;
+}
+
+.result-heading {
+  color: #263868;
+  font-family: 'Roboto';
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.result-description {
+  color: #475569;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.time-taken-value {
+  color: #263868;
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.score-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+  width: 100%;
+}
+
+.score-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e0e7ff;
+  border-radius: 12px;
+  padding: 24px 48px;
+  min-width: 200px;
+}
+
+.score-label {
+  color: #263868;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.score-value {
+  color: #263868;
+  font-family: 'Roboto';
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+}
+
+.reattempt-button {
+  font-family: 'Roboto';
+  font-weight: 600;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #263868;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 32px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.reattempt-button:hover {
+  background-color: #1e2d54;
+}
+
+@media screen and (max-width: 768px) {
+  .results-content-container {
+    padding: 36px 32px;
+    max-width: 500px;
+  }
+
+  .result-image {
+    width: 240px;
+    margin-bottom: 28px;
+  }
+
+  .result-heading {
+    font-size: 28px;
+  }
+
+  .result-description {
+    font-size: 16px;
+  }
+
+  .time-taken-value {
+    font-size: 20px;
+  }
+
+  .score-value {
+    font-size: 32px;
+  }
+
+  .score-card {
+    padding: 20px 40px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .results-content-container {
+    padding: 28px 24px;
+  }
+
+  .result-image {
+    width: 200px;
+    margin-bottom: 24px;
+  }
+
+  .result-heading {
+    font-size: 24px;
+  }
+
+  .result-description {
+    font-size: 15px;
+  }
+
+  .time-taken-value {
+    font-size: 18px;
+  }
+
+  .score-value {
+    font-size: 28px;
+  }
+
+  .score-card {
+    padding: 18px 32px;
+    min-width: 180px;
+  }
+
+  .reattempt-button {
+    font-size: 14px;
+    padding: 10px 28px;
+  }
+}
