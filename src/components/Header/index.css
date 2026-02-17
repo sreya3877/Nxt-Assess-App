@@ -1,61 +1,95 @@
+/* Header Component*/
 .nav-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #ffffff;
-  box-shadow: 0px 4px 16px 0px #bfbfbf40;
-  padding: 16px 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+  padding: 0 24px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .nav-content {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  width: 90%;
-  max-width: 1110px;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 16px 0;
 }
 
 .website-logo {
-  width: 150px;
-  cursor: pointer;
+  height: 40px;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.website-logo:hover {
+  transform: scale(1.05);
 }
 
 .logout-desktop-btn {
-  font-family: 'Roboto';
-  font-weight: 600;
-  font-size: 14px;
-  padding: 10px 24px;
-  color: #ffffff;
-  background-color: #263868;
-  border: none;
+  background-color: #ffffff;
+  border: 2px solid transparent;
   border-radius: 8px;
+  color: #667eea;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 10px 24px;
   cursor: pointer;
   outline: none;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.2);
 }
 
 .logout-desktop-btn:hover {
-  background-color: #1e2d54;
+  background-color: transparent;
+  border-color: #ffffff;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
 }
 
+.logout-desktop-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive Design */
 @media screen and (max-width: 768px) {
+  .nav-header {
+    padding: 0 20px;
+  }
+
+  .nav-content {
+    padding: 14px 0;
+  }
+
   .website-logo {
-    width: 120px;
+    height: 36px;
   }
 
   .logout-desktop-btn {
-    font-size: 12px;
-    padding: 8px 20px;
+    padding: 9px 20px;
+    font-size: 14px;
   }
 }
 
 @media screen and (max-width: 576px) {
+  .nav-header {
+    padding: 0 16px;
+  }
+
+  .nav-content {
+    padding: 12px 0;
+  }
+
   .website-logo {
-    width: 100px;
+    height: 32px;
   }
 
   .logout-desktop-btn {
-    font-size: 11px;
-    padding: 6px 16px;
+    padding: 8px 16px;
+    font-size: 13px;
   }
 }
